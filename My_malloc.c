@@ -37,7 +37,7 @@ void *my_malloc(size_t size, int mode)
             return (dataclear(&head), NULL);
         node = malloc(sizeof(t_data));
         if(!node)
-            return (dataclear(&head), NULL);
+            return (dataclear(&head), free(data), NULL);
         (1) && (node->data = data, node->next = head, head = node);
         return (data);
     }
