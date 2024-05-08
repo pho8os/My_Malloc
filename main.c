@@ -4,7 +4,7 @@
 
 void f()
 {
-    char *test = my_malloc(55, 1);
+    char *test = my_malloc(55, 1); // using malloc will cause a leak; 
 }
 
 void a()
